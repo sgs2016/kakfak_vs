@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>My Tasks</h1>
+            <p>Stay organized, stay focused.</p>
+        </header>
+
+        <form id="todo-form">
+            <div class="input-group">
+                <input type="text" id="todo-input" placeholder="What needs to be done?" autocomplete="off" required>
+                <button type="submit" id="add-btn"><i class="fas fa-plus"></i></button>
+            </div>
+        </form>
+
+        <div class="todo-list-container">
+            <ul id="todo-list">
+                <!-- Tasks will be injected here dynamically -->
+                <div class="loading-text">Loading your tasks...</div>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
